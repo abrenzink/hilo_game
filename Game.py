@@ -43,6 +43,8 @@ class Game:
         Args:
             self (Game): An instance of Game.
         """
+        if not self.is_playing:
+            return
 
         card = Card()
         card.draw()
@@ -59,17 +61,17 @@ class Game:
         Args:
             self (Game): An instance of Game.
         """
-    
+
         print(f"Previous card: {self.previous}")
         print(f"Drawn card: {self.current}")
         print(f"Your total score is: {self.total_score}\n")
 
         self.previous = self.current
 
-        self.is_playing == (self.total_score > 0)
+        self.is_playing = (self.total_score > 0)
 
         if not self.is_playing:
-            self.play_game()
+                return
 
     def compair_cards(self):
         """Compair previous and current card and returns True if current is higher. 
