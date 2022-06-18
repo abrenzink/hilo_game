@@ -57,7 +57,7 @@ class Game:
         """Displays the cards and the score. Also asks the player if they want to roll again. 
 
         Args:
-            self (Director): An instance of Director.
+            self (Game): An instance of Game.
         """
     
         print(f"Previous card: {self.previous}")
@@ -66,12 +66,17 @@ class Game:
 
         self.previous = self.current
 
-        self.is_playing == (self.total_score < 0)
+        self.is_playing == (self.total_score > 0)
 
         if not self.is_playing:
             self.play_game()
 
     def compair_cards(self):
+        """Compair previous and current card and returns True if current is higher. 
+
+        Args:
+            self (Game): An instance of Game.
+        """
         if self.current > self.previous:
             return True
         else:
