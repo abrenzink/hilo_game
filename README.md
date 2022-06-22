@@ -14,21 +14,10 @@ python3 hilo_game
 You can also run the program from an IDE like Visual Studio Code. Start your IDE and open the 
 project folder. Select the main module inside the hilo_game folder and click the "run" button.
 
-## Project Structure
----
-The project files and folders are organized as follows:
-```
-root                    (project root folder)
-+-- dice                (source code for game)
-  +-- game              (specific classes)
-  +-- __main__.py       (program entry point)
-+-- README.md           (general info)
-```
-
 ## Required Technologies
 ---
 * Python 3.8.0
 
 ## Authors
 ---
-* Matt Manley (manleym@byui.edu)
+* Andy Brenzink (abrenzink@byui.edu)
